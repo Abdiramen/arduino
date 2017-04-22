@@ -7,7 +7,7 @@ AFLAGS=-O ihex -R .eeprom
 UFLAGS=-F -V -c arduino -p ATMEGA328P -P /dev/ttyACM0 -b 115200 -U flash:w:$(HEXFILE)
 
 # I can probably find a better way to do this. For example I might wnat to add these variables directly in their recipies?
-CFILE=led.c
+CFILE=led.c  # Generic placeholder name
 OFILE=led.o
 EFILE=led
 HEXFILE=led.hex
